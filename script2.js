@@ -7,8 +7,8 @@ sum = 0;
      if (start > end) {
      sum = sum + 0; }
      else {
-         sum = end + toSum(start, end - step, step)
+         sum = end + toSum(start, end - step, step);
      }
-     return sum 
+     return sum ;
  }
- console.log(toSum(0,12,2))
+ console.log(toSum(0,12,2));
