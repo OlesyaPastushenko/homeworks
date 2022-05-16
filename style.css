@@ -1,0 +1,8 @@
+
+div {
+    display: flex;
+    height: 30px;
+    width: 150px;
+    background-color: aqua;
+    border-radius: 5px;
+}
