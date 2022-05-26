@@ -8,13 +8,12 @@ function createBtn (tag, clName, text) {
 var btn = document.createElement(tag);
 btn.className =clName;
 btn.innerHTML =text;
-btn.setAttribute('data-id',text)
-var wrap = document.querySelector(".wrap")
-wrap.append(btn)
+var wrap = document.querySelector(".wrap");
+wrap.append(btn);
 }
 for (var i=0;i<fields.length;i++) {
     for (var j=0;j<fields.length;j++)
-    createBtn("button","btn",j+1 + fields[i])
+    createBtn("button","btn",j+1 + fields[i]);
 }
 var wrap = document.querySelector('.wrap');
 wrap.addEventListener('click', function(e){
@@ -24,11 +23,11 @@ wrap.addEventListener('click', function(e){
         var number = elem.textContent;
             if (ships.includes(number)) {
                 elem.classList.add('red');
-                alert('Попадание!')
+                alert('Попадание!');
             }
             else {
                 elem.classList.add('deep_blue');
-                alert('Мимо!')
+                alert('Мимо!');
             }
     }
 })
