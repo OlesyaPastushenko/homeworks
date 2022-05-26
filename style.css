@@ -1,0 +1,46 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-attachment: black ;
+}
+.btn {
+    width: 45px;
+    background: blue;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    text-transform: uppercase;
+    margin: 5px;
+
+}
+.red {
+    background: red;    
+}
+.deep_blue {
+    background: darkslateblue;    
+}
+span {
+    background-color: blueviolet;
+}
+.wrap {
+    width: 450px;
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    background: black;
+    flex-wrap: wrap;
+}
+.block {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    display: none;
+}
+.block.active {
+    display: block;
+}
