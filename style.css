@@ -1,0 +1,33 @@
+.field {
+    display: block;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background-color: lightgreen;
+}
+.car {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90px;
+    height: 37px;  
+    background-image: url('./sourse/1.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fire {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;  
+    background-image: url('./sourse/2.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+.desappair {
+    transition: 1s;
+    opacity: 0;
+}
