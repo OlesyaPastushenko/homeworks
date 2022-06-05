@@ -1,0 +1,45 @@
+body {
+    display:block;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgreen;
+
+}
+
+
+.cat {
+    /* display: block; */
+    width: 50px;
+    height: 90px;
+    background-image: url(./DZ/source/1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.mouse {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(./DZ/source/2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.box {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: black; 
+}
+.end {
+    display: none;
+    position: fixed;
+    margin-top: 30vh;
+    width: 100vw;
+    height: 30vh;
+    background: black; 
+    opacity: 0.3;
+    z-index: 1;
+
+}
