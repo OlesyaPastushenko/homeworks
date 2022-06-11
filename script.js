@@ -5,7 +5,7 @@ const addCount = () => {
     getCount: () => count
  })
 }
-const day = add.count()
+const day = addCount()
 
 const worker = {
     login: "",
