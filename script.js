@@ -1,23 +1,32 @@
+const addCount = () => {
+ let count = 0;
+ return ({
+    add: () => count +=1,
+    getCount: () => count
+ })
+}
+const day = add.count()
+
 const worker = {
     login: "",
     password: "",
     name: "Vasya",
     surname: "Petrov",
     rate: 25,
-    days: 7,
+    days: day.getCount(),
     getSalary: () => {
         return worker.rate*worker.days
     }
 }
 console.log(worker.getSalary());
-cashier(worker) {
+cashier(worker) = {
     salaryPay: () => {}
 }
 console.log(worker.getSalary());
-admin(cashier) {
+admin(cashier) = {
     deleteWorker: () => {}
 }
-consultant(worker) {
+consultant(worker) = {
     turnover: 200,
     interst: 1,
     getSalary: () => {
@@ -25,4 +34,5 @@ consultant(worker) {
     }
 }
 console.log(consultant.getSalary())
+
 
