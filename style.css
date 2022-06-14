@@ -1,0 +1,31 @@
+body {
+    flex-direction: column;
+    background: whitesmoke;
+    color: white;
+}
+.porsche {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+
+.audi {
+    position: relative;
+    display: block;
+    text-align: center; 
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.toyota {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background: gray;
+}
