@@ -7,7 +7,13 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.slider {
+    width: 300px;
+   display: flex;
+   justify-content: center;
+}
 .slider-wrap {
+    display: block;
     width: 300px;
     overflow: hidden;
 }
@@ -19,4 +25,16 @@ body {
 }
 .slider-wrap li img{
    width: 300px;    
+}
+.whitedot {
+    display:inline-block;
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+.dots {
+    display: flex;
+    justify-content: center;
 }

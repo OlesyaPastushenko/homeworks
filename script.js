@@ -1,6 +1,16 @@
 const btn = document.querySelectorAll(".slider-btn");
 const mover = document.querySelector(".slider-wrap ul");
-const slides = mover.querySelectorAll("li")
+const slides = mover.querySelectorAll("li");
+const slider = document.querySelector(".slider")
+const dots = document.querySelector(".dots")
+console.log(dots)
+const numSlides = Array.from(slides);
+const num = numSlides.length;
+for(let i=0; i<num; i++) {
+let dot = document.createElement("div")
+dot.className = "whitedot"
+dots.append(dot)
+}
 let count = 0
 slides[count].classList.add("active")
 const onMove = () => {
