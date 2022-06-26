@@ -1,0 +1,22 @@
+body {
+    background: black;
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider-wrap {
+    width: 300px;
+    overflow: hidden;
+}
+.slider-wrap ul{
+    width: 1000px;
+    display: flex;
+    transition: 1s;
+    transform: translateX(0px);
+}
+.slider-wrap li img{
+   width: 300px;    
+}
