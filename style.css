@@ -1,0 +1,26 @@
+.choice {
+    display: flex;    
+    
+
+}
+.choice button{
+    margin: 5px;
+}
+.gamer1 {
+    display: block;
+    width: 250px;
+    height: 40px;
+    border: 2px solid black;
+}
+.gamer2 {
+    display: block;
+    width: 250px;
+    height: 40px;
+    border: 2px solid black;
+}
+.result {
+    display: block;
+    width: 250px;
+    height: 40px;
+    border: 2px solid black; 
+}
