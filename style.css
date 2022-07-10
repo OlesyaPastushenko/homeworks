@@ -1,0 +1,115 @@
+.field {
+    display: flex;
+    position: fixed;
+    width: 95vw;
+    height: 95vh;
+    border: 3px solid black;
+}
+.fig {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    background-color: gray;
+    border: 1px solid white;
+}
+.var {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    background-color: gray;
+    border: 1px solid white;
+}
+.dino {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: calc(100% - 200px);
+    height: 99,9%;
+    margin: 30px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+.dinoBody {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;  
+    z-index: -1;
+}
+.dinoEyes {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 18px;
+    width: 20px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;  
+    z-index: 0;
+}
+.dinoMouth {
+    position: absolute;
+    margin-left: -3px;
+    margin-top: 15px;
+    width: 20px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;  
+    z-index: 1;
+}
+.hat {
+    position: absolute;
+    margin-top: -17px;
+    margin-left: 10px;
+    width: 40px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 40px 20px;  
+    z-index: 1;
+    transform: rotate(12.0deg);
+}
+.scale {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 42px;
+    width: 400px;
+    height: 255px;
+    background-repeat: no-repeat; 
+    background-size: contain;  
+    z-index: 1;
+}
+.spots {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 45px;
+    width: 400px;
+    height: 225px;
+    background-repeat: no-repeat; 
+    background-size: contain;  
+    z-index: 1;
+}
+.fig_el {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+.fig_el:hover {
+    border: 1px solid white;
+}
+.pic {
+    width: 80px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+h1 {
+    z-index: 0;
+}
