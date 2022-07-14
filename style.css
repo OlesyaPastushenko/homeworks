@@ -1,0 +1,13 @@
+.task {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;    
+    width: 210px;
+}
+.btn {
+    text-decoration: none;
+}
+.hello {
+    height: 40px;
+    width: 300px;
+}
