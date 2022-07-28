@@ -3,13 +3,14 @@
 import { helperCreateClass } from '../../helper/helperCreate'
 const Product = () => {
     const wrap = helperCreateClass('div', '', '')
-        fetch('https://fakestoreapi.com/products')
+        fetch('https://api.github.com/users/USERNAME')
         .then(res=>res.json())
         .then(json=>{
-            json.forEach(el => {
-                let title = helperCreateClass('h3', '', el.title);
-                wrap.append(title)
-            });
+            console.log(json)
+            // json.forEach(el => {
+            //     let title = helperCreateClass('h3', '', el.title);
+            //     wrap.append(title)
+            // });
         })
         return wrap
 }
