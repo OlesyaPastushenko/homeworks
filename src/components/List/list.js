@@ -2,24 +2,6 @@ import { MDCDataTable } from '@material/data-table';
 import { createElem } from "../../helper/createElem";
 
 const List = () => {
-    let users = [{
-        "id": 1,
-        "name": "Jonalisa octocat",
-        "followers": 20,
-    }, {
-        "id": 2,
-        "name": "Pona Uctoge",
-        "followers": 9,
-    }, {
-        "id": 3,
-        "name": "Lonare Petose",
-        "followers": 2,
-    }, {
-        "id": 4,
-        "name": "Joanona Poancto",
-        "followers": 1,
-    }];
-    
     const root = document.getElementById('root');
 
     createElem('div', root, `
@@ -41,10 +23,26 @@ const List = () => {
     const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
     const { content } = dataTable;
 
-    users.forEach(el => {
-        createElem('tr', content, `
-        <th class="mdc-data-table__cell" scope="row">${el.name}</th>
-        <td class="mdc-data-table__cell mdc-data-table__cell--numeric">${el.followers}</td>`, 'mdc-data-table__row')
+    let users = [];
+    fetch('https://api.github.com/users')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(el => {
+            fetch(el.url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                users.push({
+                    login: data.login,
+                    followers: data.followers
+                });
+
+                createElem('tr', content, `
+                <th class="mdc-data-table__cell" scope="row">${data.login}</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">${data.followers}</td>`, 'mdc-data-table__row');
+                console.log(users)
+            });
+        });
     });
 }
 
