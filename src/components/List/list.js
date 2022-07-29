@@ -1,7 +1,5 @@
 import { MDCDataTable } from '@material/data-table';
 import { createElem } from "../../helper/createElem";
-import { Octokit } from 'octokit';
-
 
 const List = () => {
     const root = document.getElementById('root');
