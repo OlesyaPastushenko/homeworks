@@ -1,7 +1,6 @@
 import { OnHandleRoute } from '../../helper/route.js';
 import './style.scss'
 const Header = () => {
-  console.log("sdkfsdkl");
   const header = document.createElement("header");
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");

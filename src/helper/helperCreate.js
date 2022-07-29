@@ -9,7 +9,6 @@ const helperCreateClass = (tag = "h2", classes = "test",text = "", style = {}) =
     .replace(/,/g,";")
     .replace(/{/g,"")
     .replace(/}/g,";")
-    console.log(strStyle)
     const elem = document.createElement(tag)
     elem.className = classes
     elem.innerHTML = text
