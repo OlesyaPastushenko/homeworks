@@ -1,2 +1,13 @@
+@use "@material/checkbox";
+@use "@material/icon-button";
+@use "@material/data-table/data-table";
+
+@include checkbox.core-styles;
+@include data-table.core-styles;
+@include data-table.theme-baseline;
+
 @import "normalize.scss";
 @import "style.scss";
+
+@import "../components/List/main.scss";
+@import "../components/Button/main.scss";
