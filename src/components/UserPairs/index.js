@@ -7,11 +7,11 @@ const UserPairs = (users = []) => {
 
   const compareUsersFollowers = (firstUser, secondUser) => {
     if (firstUser.followers > secondUser.followers) {
-      return `Winner is ${firstUser.name} with ${firstUser.followers} followers!`;
+      return `Winner is ${firstUser.login} with ${firstUser.followers} followers!`;
     } else if (firstUser.followers === secondUser.followers) {
-      return `${firstUser.name} and ${secondUser.name} have the same number of followers!`;
+      return `${firstUser.login} and ${secondUser.login} have the same number of followers!`;
     } else {
-      return `Winner is ${secondUser.name} with ${secondUser.followers} followers!`;
+      return `Winner is ${secondUser.login} with ${secondUser.followers} followers!`;
     }
   };
 

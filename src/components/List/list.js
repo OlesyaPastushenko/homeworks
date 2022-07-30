@@ -1,7 +1,7 @@
 import { MDCDataTable } from "@material/data-table";
 import { createElem } from "../../helper/createElem";
 import UserPairs from "../UserPairs";
-const token = ""; // add link token https://github.com/settings/tokens
+const token = "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"; // add link token https://github.com/settings/tokens
 
 const List = () => {
   const root = document.getElementById("root");
