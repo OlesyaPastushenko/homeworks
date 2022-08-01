@@ -1,5 +1,10 @@
 import './styles/all.scss' 
-import List from './components/List/list';
-import Button from './components/Button/button';
-List()
-Button()
+import Table from './components/Table/index';
+import createChart from './components/Chart/index' 
+const  li = async ()=> {
+  await Table()
+  await createChart()
+}
+li()
+
+
