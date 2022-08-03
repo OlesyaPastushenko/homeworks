@@ -1,0 +1,79 @@
+.menuOff {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(150, 159, 165);
+}
+.menuOn {
+  position: absolute;
+  left: -100px;
+  top: 0px;
+  height: 100vh;
+  width: 150px;
+  background-color: rgb(97, 96, 96);
+  transform: translate(100px);
+  transition: all 0.5s ease;
+}
+a {
+text-decoration: none;
+color: white;
+font-weight: 300;
+}
+
+a:hover {
+  color: black;
+}
+
+li {
+  list-style-type: none;
+  margin: 15px;
+}
+.burger {
+  display: flex;
+  margin-top: 25px;
+  width: 30px;
+  height: 30px;
+  background-image: url("./img/hamburger-menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 30px;
+}
+ul {
+  margin-top: 30px;
+  padding-left: 0px;
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  left: 150px;
+  top: 0px;
+  height: 80px;
+  width: 100vw;
+  background-color: rgb(197, 197, 197);
+}
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-left: 50px;
+}
+.fotowrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  width: 400px;
+  height: 400px;
+
+  
+}
+.foto {
+  width: 300px;
+  height: 300px;
+  background-image: url("./img/0C7F26F0-F314-4203-8270-723DE1F47BDD.PNG");
+  background-repeat: no-repeat;
+  background-size: cover}
