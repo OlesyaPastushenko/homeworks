@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.41);
+padding: 10px;
+
+    ul {
+        display: flex;
+        a{
+            display: block;
+            padding: 5px;
+            color: white;
+        }
+        a:hover {
+            color: rgb(36, 36, 36);
+        }
+    }   
+}

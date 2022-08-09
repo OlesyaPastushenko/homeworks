@@ -1,15 +1,11 @@
-*, html, body {
-    margin: 0;
-    padding: 0;
+*, html,body {
+    margin: 0px;
+    padding: 0px;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.wrapper {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
+// body{
+//     background: url("../../img/Grosser_Panda.jpeg") #000000e3;
+//     height: 1000px;
+// }

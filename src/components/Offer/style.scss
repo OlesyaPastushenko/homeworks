@@ -1,0 +1,94 @@
+.cardCosta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(0.5);
+}
+.cardCostaScale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transition: 1s;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(0.5);
+}
+.cardScale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(1);
+    transition: 1s;
+}
+.cardInterior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(0.5);
+}
+.cardInteriorScale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(1);
+    transition: 1s;
+}
+.cardCentro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(0.5);
+}
+.cardCentroScale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(1);
+    transition: 1s;
+}
+.cardVistasAlMar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(0.5);
+}
+.cardVistasAlMarScale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(1);
+    transition: 1s;
+}
