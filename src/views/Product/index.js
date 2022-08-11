@@ -1,6 +1,6 @@
 // import './style.scss'
 
-import { helperCreateClass } from '../../helper/helperCreate'
+import { helperCreateClass } from '../../Helper/helperCreate'
 const Product = () => {
     const wrap = helperCreateClass('div', '', '')
         fetch('https://fakestoreapi.com/products')

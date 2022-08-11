@@ -16,4 +16,4 @@ const helperCreateClass = (tag = "h2", classes = "test",text = "", style = {}) =
     return elem
 }
 
-export {helperCreateClass, helperCreateId};
+export { helperCreateClass, helperCreateId };

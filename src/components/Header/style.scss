@@ -2,8 +2,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.41);
-padding: 10px;
+    background: black;
+    padding: 10px;
+    .logo {
+        color: white;
+    }
 
     ul {
         display: flex;

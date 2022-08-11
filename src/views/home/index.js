@@ -1,8 +1,8 @@
 import './style.scss'
-import { helperCreateClass } from '../../helper/helperCreate'
+import { helperCreateClass } from '../../Helper/helperCreate'
 import { areas, types, prices, rooms, bath } from '../../components/DataBase/data'
-import createSelect from '../../helper/createSelect'
-import offer from '../../components/Offer'
+import createSelect from '../../Helper/createSelect'
+import animOnScroll from '../../Helper/animOnScroll'
 const root = document.getElementById('root')
 const style = {
 color: 'black'
@@ -58,10 +58,10 @@ const Home = () => {
     <label for="checkPool">Vistas al mar</label>
     </div>
     `) 
-
+    
     wrapForfilter_2.append(wrapForCheck)
     cover.append(wrapForfilter_2)
-
+    
     cover.addEventListener("change", (e)=>{
         let selectName = e.target.getAttribute("name")
         console.log(selectName, "=>", e.target.value)
@@ -69,12 +69,12 @@ const Home = () => {
             let vol = e.target.value
             zoneSelect.innerHTML = ""
             if (typeof areas[vol] === "object"){
-            areas[vol].forEach(el => {
-                const zoneOption = document.createElement("option")
-                zoneOption.setAttribute("value",el)
-                zoneOption.innerHTML = el
-                zoneSelect.append(zoneOption)
-            });     
+                areas[vol].forEach(el => {
+                    const zoneOption = document.createElement("option")
+                    zoneOption.setAttribute("value",el)
+                    zoneOption.innerHTML = el
+                    zoneSelect.append(zoneOption)
+                });     
             }
             else if (typeof areas[vol] === "string") {
                 const zoneOption = document.createElement("option")
@@ -85,21 +85,67 @@ const Home = () => {
         }
         
     })
+
     wrap.append(cover)
 
-    const block1 = helperCreateClass("div","block","","")
-    const costa = offer("Costa")
-    const interior = offer("Interior")
-    const golf = offer("Golf")
-    block1.append(golf)
-    block1.append(interior)
-    block1.append(costa)
-    window.onscroll = () => {
-        document.querySelectorAll(".card").forEach(element => {
-            element.className = "cardScale"
-        });
-    }
+    const h2 = helperCreateClass("div", "h2", `¿COMO QUIERES QUE SEA TU VIDA EN<p>&#160ESPAÑA?</p>`,"")
+    wrap.append(h2)
+
+    window.addEventListener('scroll', animOnScroll)
+
+    const block1 = helperCreateClass("div","block",`
+    <div class = "col">
+    <div class = "_costa _card _noanim">Costa</div>
+    <div class = "_interior _card _noanim">Interior</div>
+    </div>
+    <div class = "col">
+    <div class = "_centro _card _noanim">Centro ciudad</div>
+    <div class = "_vistas _card _noanim">Vistas al mar</div>
+    </div>
+    <div class = "col">
+    <div class = "_golf _card _noanim">Golf</div>
+    `,"")
+
     wrap.append(block1)
+
+    const h3 = helperCreateClass("div", "h2", `¿DONDE QUIERES <p>&#160VIVIR?</p>`,"")
+    wrap.append(h3)     
+    
+    const block2 = helperCreateClass("div","block",`
+    <div class = "col">
+    <div class = "_costa _card _noanim">Costa</div>
+    <div class = "_interior _card _noanim">Interior</div>
+    </div>
+    <div class = "col">
+    <div class = "_centro _card _noanim">Centro ciudad</div>
+    <div class = "_vistas _card _noanim">Vistas al mar</div>
+    </div>
+    <div class = "col">
+    <div class = "_golf _card _noanim">Golf</div>
+    `,"")
+    
+    wrap.append(block2)
+
+    const h4 = helperCreateClass("div", "h2", `¿CUAL ES TU VIVIENDA  <p>&#160IDEAL?</p>`,"")
+    wrap.append(h4)     
+    
+    const block3 = helperCreateClass("div","block",`
+    <div class = "col">
+    <div class = "_costa _card _noanim">Costa</div>
+    <div class = "_interior _card _noanim">Interior</div>
+    </div>
+    <div class = "col">
+    <div class = "_centro _card _noanim">Centro ciudad</div>
+    <div class = "_vistas _card _noanim">Vistas al mar</div>
+    </div>
+    <div class = "col">
+    <div class = "_golf _card _noanim">Golf</div>
+    `,"")
+    
+    wrap.append(block3)
+
+    const footer = helperCreateClass("div", "footer", "Adress", "")
+    wrap.append(footer)
     return wrap
 
 }

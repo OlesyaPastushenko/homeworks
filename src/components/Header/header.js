@@ -1,8 +1,8 @@
-import { OnHandleRoute } from '../../helper/route.js';
+import { OnHandleRoute } from '../../Helper/route.js';
 import './style.scss'
-import { helperCreateClass } from '../../helper/helperCreate.js';
+import { helperCreateClass } from '../../Helper/helperCreate.js';
 const Header = () => {
-  const logo = helperCreateClass("div","", "Murcia Sweet Home")
+  const logo = helperCreateClass("div","logo", "Murcia Sweet Home")
   const header = document.createElement("header");
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
