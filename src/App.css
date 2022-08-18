@@ -1,0 +1,36 @@
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+.App {
+    width: 800px
+}
+.task {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    background: white;
+    color: teal;
+    border: 1px solid teal;
+    border-radius: 4px;
+    padding: 3px 6px
+}
+.input {
+    margin-right: 10px;
+    border: 1px solid teal;
+    border-radius: 4px;
+    height: 20px; 
+}
+.button:hover {
+    color: white;
+    background-color: teal;
+}
+.task_text {
+    font-size: 15px;
+}
+.task_crossed {
+    text-decoration: line-through;
+}
