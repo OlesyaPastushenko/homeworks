@@ -1,0 +1,63 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 321px;
+    align-items: center;
+}
+.first {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+
+}
+
+input[name = "text_name"] {
+    width: 100px;
+
+}
+
+
+.second {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+
+}
+
+input[name = "text_price"] {
+    width: 15px;
+
+}
+
+.third {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+
+}
+.submit {
+    margin: 10px;
+    width: 300px;
+}
+.msg {
+    color: red;
+    margin-top: 10px;
+    display: flex;
+    width: 321px;
+    height: 30px;
+    align-items: center;
+}
+.link {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+}

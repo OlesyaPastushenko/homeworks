@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form name="testForm">
+        <div class="first">
+            <label for="">Название (до 25 символов)</label>
+            <input type="text" name="text_name" placeholder="Название">
+        </div>
+        <div class="second">
+            <label for="">Цена, грн (до 2 символа)</label>
+            <input type="text" name="text_price" placeholder="00">
+            <select name="select" id="">
+                <option value="1">шт</option>
+                <option value="10">кг</option>
+                <option value="100">ед</option>
+                <option value="100">л</option>
+            </select>
+        </div>
+        <div class="third">
+            <label for="">Описание (до 150 символов)</label>
+            <textarea name="textarea" id="" cols="25" rows="10"></textarea>
+        </div>
+        <div class="link">
+            <label for="">Ссылка на товар</label>
+            <input type="text" name="link" placeholder="https://">
+        </div>
+        <input type="submit" class="submit">
+    </form>
+    <div class="msg"></div>
+</body>
+</html>
