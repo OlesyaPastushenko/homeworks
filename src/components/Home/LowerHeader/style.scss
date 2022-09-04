@@ -1,0 +1,68 @@
+.recWhite  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 120px;
+    background-color: white;
+    color: #656565;
+
+}
+
+.lowerHeader{
+    padding: 0px;
+    display: flex;  
+}
+
+.a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #656565;
+    margin-left: 10px;
+}
+
+.a:hover {
+    color: black;
+}
+.leo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+    color: #656565;
+    margin-left: 60px; 
+}
+.basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #7db122;
+  margin-right: 5px;
+}
+.eticket {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #7db122;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap3 {
+    display: flex;
+    margin-right: 60px;
+}
+
+.wrap3 input {
+  width: 174px;
+  height: 29px;
+  border: solid 1px #c6c6c6;
+  background-color: #fff;
+  margin-right: 15px;
+  margin-left: 15px;
+}
