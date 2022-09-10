@@ -1,0 +1,11 @@
+.divLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    button {
+       width: 100px;
+    }
+}
