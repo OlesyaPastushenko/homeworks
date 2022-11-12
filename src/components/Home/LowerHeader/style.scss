@@ -1,122 +1,95 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 .recWhite  {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 120px;
+    padding-top: 40px;
+    width: 100%;
     background-color: white;
     color: #656565;
 
 }
 
 .lowerHeader{
-    padding: 0px;
     display: flex;  
+    padding-left: 70px;
 }
 
 .a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
+  text-decoration: none;
+  font-family: "Open Sans";
+}
+.navlinks {
+    margin: 6px 24px 7px 0;
+    font-size: 16px;
+    color: #141b2d;
     text-decoration: none;
-    color: #656565;
-    margin-left: 10px;
+    font-family: 'Open Sans';
+}
+.favoritas {
+    position: relative;
+    margin-right: 0px;
+}
+.a:hover {
+    color: #939394;
+}
+.logo {
+    height: 46px;
 }
 
-.a:hover {
-    color: black;
-}
-.leo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 35px;
-    text-decoration: none;
-    color: #656565;
-    margin-left: 60px; 
-}
-.basket {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #7db122;
-  margin-right: 5px;
-}
 .eticket {
-  top: 22px;
-  left: 35px;
+  top: -7px;
+  left: 95px;
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #393939;
+  background-color: #1c3988;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
-.wrap3 {
-    position: relative;
-    display: flex;
-    margin-right: 60px;
-}
-
-.wrap3 input {
-  width: 174px;
-  height: 29px;
-  border: solid 1px #c6c6c6;
-  background-color: #fff;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-*, html, body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-.rec  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 43px;
-    background-color: #4cb1ca;
-}
-.rec label {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-right: 5px;
-    color: white;
-    margin-left: 20px;
-}
-.rec select {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #4cb1ca;
-    color: white;
-    border: none;
-    outline: none;
-}
-.upperHeader {
-    display: flex;
-    margin-right: 30px;
-    
-}
-
 
 li{
     list-style-type: none
 }
-.upperHeader div {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-.upperHeader li a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-    color: white;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 984.9px;
+    height: 48px;
+  }
+  
+.button_header {
+        display: flex;
+        width: 134px;
+        height: 48px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        background-color: #1c3988;
+        color: white;
+        font-family: "Open Sans";
+        font-size: 15px;
+        border: none;
+
+}
+.button_header:hover {
+    background-color: #101f48;
+}
+.logo_links {
+    display: flex;
+    align-items: center;
 }
 

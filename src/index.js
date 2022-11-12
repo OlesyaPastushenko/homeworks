@@ -4,30 +4,33 @@ import { render } from 'react-dom';
 import { ContextuserBasket, ContextCatalogue } from "store/context";
 import { BrowserRouter } from 'react-router-dom';
 import { ContextFilter } from "./store/context";
+import { ContextResult } from "./store/context";
 
 function Init() {
     const [catalogue, setCatalogue] = useState([])
     const [userBasket, setUserBasket] = useState([])
     const [filter, setFilter] = useState({
-        'poblacion':'Poblaciones',
+        'poblacion':'Poblaciónes',
         'rooms':'',
         'price': '100000000',
         'type':'',
-        'zone':''
-
+        'zone':'',
+        'topoffer': "no",
     })
-    
+    const [result, setResult] = useState([])
                 
     return (
         <React.StrictMode>
             <BrowserRouter>
-            <ContextCatalogue.Provider value={{catalogue, setCatalogue}}>
-                <ContextuserBasket.Provider value={{userBasket, setUserBasket}}>
-                    <ContextFilter.Provider value={{filter, setFilter}}>
-                    <App/>
-                    </ContextFilter.Provider>
-                </ContextuserBasket.Provider>
-            </ContextCatalogue.Provider>
+              <ContextResult.Provider value = {{result, setResult}}>
+                <ContextCatalogue.Provider value={{catalogue, setCatalogue}}>
+                    <ContextuserBasket.Provider value={{userBasket, setUserBasket}}>
+                        <ContextFilter.Provider value={{filter, setFilter}}>
+                        <App/>
+                        </ContextFilter.Provider>
+                    </ContextuserBasket.Provider>
+                </ContextCatalogue.Provider>
+              </ContextResult.Provider>
             </BrowserRouter>
         </React.StrictMode>
     )

@@ -1,0 +1,38 @@
+.wrapAbout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 120px;
+}
+.aboutImg {
+    width: 677px;
+    height: 464px;
+    background-image: url('./img1.png');
+    background-size: cover;
+}
+.img_text {
+    display: flex;
+    justify-content: center;
+}
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    padding-left: 95px;
+    h1 {
+  width: 352px;
+  font-family: 'Merriweather';
+  font-size: 52px;
+  font-weight: bold;
+  text-align: left;
+  color: #091638;
+    }
+    p {
+  margin-top: 24px;
+  width: 352px;
+  font-family: 'Open Sans';
+  font-size: 17px;
+  text-align: left;
+  color: #091638;
+    }
+}

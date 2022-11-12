@@ -5,7 +5,6 @@ import {Link , useLocation} from 'react-router-dom'
 import {ContextCatalogue, ContextuserBasket} from "../../store/context";
 const Basket = () => {
     const {userBasket, setUserBasket} = useContext(ContextuserBasket)
-    console.log("basket->", userBasket)
     
     return (
         <div className="allWrap">
